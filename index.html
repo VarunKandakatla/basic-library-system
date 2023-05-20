@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Basic Library System</title>
+        <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1596/1596392.png">
+        <link rel="stylesheet" href="./style.css">
+       
+    </head>
+    <body>
+        <div class="nav">
+            <nav >
+                <label id="lms">Library System</label>
+                <a href="#tab"><label id="books">Books</label></a>
+                <a href="#form"><label id="register">Register</label></a> 
+            </nav>
+        </div>
+
+        <section>
+            <h1 id="tab">Books</h1>
+            <div class="table">
+                <table border="1px" cellspacing="0px">
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Genre</th>
+                        <th>Availability</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="4">01</td>
+                        
+                        <td>Book name</td>
+                        <td rowspan="4">Author 1</td>
+                        <td rowspan="4">genre 1</td>
+                        <td rowspan="4">Availability</td>
+                        
+                            <tr>
+                                <td>Publication Date</td>
+                            </tr>
+        
+                            <tr>
+                                <td>Page Count</td>
+                            </tr>
+        
+                            <tr>
+                                <td>ISBN</td>
+                            </tr>
+                    </tr>
+        
+                    <tr>
+                        <td rowspan="4">02</td>
+                        
+                        <td>Book name</td>
+                        <td rowspan="4">Author 2</td>
+                        <td rowspan="4">genre 2</td>
+                        <td rowspan="4">Available</td>
+                        
+                            <tr>
+                                <td>Publication Date</td>
+                            </tr>
+        
+                            <tr>
+                                <td>Page Count</td>
+                            </tr>
+        
+                            <tr>
+                                <td>ISBN</td>
+                            </tr>
+                    </tr>
+        
+                    <tr>
+                        <td rowspan="4">03</td>
+                        
+                        <td>Book name</td>
+                        <td rowspan="4">Author 3</td>
+                        <td rowspan="4">genre 3</td>
+                        <td rowspan="4">Not Available</td>
+                        
+                            <tr>
+                                <td>Publication Date</td>
+                            </tr>
+        
+                            <tr>
+                                <td>Page Count</td>
+                            </tr>
+        
+                            <tr>
+                                <td>ISBN</td>
+                            </tr>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="reg">
+            <h1 id="form">Register Form</h1>
+                <form action="#" method="post" >
+                    <label for="">Name:</label>
+                    <input type="text" required>
+                    <input type="text" required>
+    
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" required>       
+                    </div>
+    
+                    <div>
+                        <label for="">Date of Birth</label>
+                        <input type="date" required>
+                    </div>
+    
+                    <div>
+                        <label for="">Age:</label>
+                        <input type="number" min="5" max="100" required>
+                    </div>
+    
+                    <div>
+                        <label for="">Password</label>
+                        <input type="password" required>
+                    </div>
+    
+                    <div>
+                        <label for="">Confirm Password</label>
+                        <input type="password" required>
+                    </div>
+
+                    <input type="submit">
+                </form>
+
+        </section>
+    </body>
+</html>
