@@ -2,94 +2,137 @@
 <html>
     <head>
         <title>Basic Library System</title>
-        <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/1596/1596392.png">
+        <link rel="icon" href="./th.jpeg">
         <link rel="stylesheet" href="./style.css">
-       
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="nav">
-            <nav >
-                <label id="lms">Library System</label>
-                <a href="#tab"><label id="books">Books</label></a>
-                <a href="#form"><label id="register">Register</label></a> 
-            </nav>
-        </div>
 
-        <section>
+            <nav class="nav">
+                <label class="logo">Library System</label>
+                <a href="#tab"><label class="option">Books</label></a>
+                <a href="#form"><label class="option">Register</label></a> 
+            </nav>
+
+        <section class="table">
             <h1 id="tab">Books</h1>
-            <div class="table">
                 <table border="1px" cellspacing="0px">
-                    <tr>
+                    
+                    <tr class="tr">
+                        
                         <th>Book ID</th>
                         <th>Title</th>
                         <th>Author</th>
                         <th>Genre</th>
                         <th>Availability</th>
                     </tr>
-                    <tr>
+                    <tr class="tr">
                         <td rowspan="4">01</td>
                         
-                        <td>Book name</td>
-                        <td rowspan="4">Author 1</td>
-                        <td rowspan="4">genre 1</td>
-                        <td rowspan="4">Availability</td>
-                        
-                            <tr>
-                                <td>Publication Date</td>
-                            </tr>
-        
-                            <tr>
-                                <td>Page Count</td>
-                            </tr>
-        
-                            <tr>
-                                <td>ISBN</td>
-                            </tr>
-                    </tr>
-        
-                    <tr>
-                        <td rowspan="4">02</td>
-                        
-                        <td>Book name</td>
-                        <td rowspan="4">Author 2</td>
-                        <td rowspan="4">genre 2</td>
+                        <td>RRR for OSCARS</td>
+                        <td rowspan="4">Jakkana</td>
+                        <td rowspan="4">Action</td>
                         <td rowspan="4">Available</td>
                         
-                            <tr>
-                                <td>Publication Date</td>
+                            <tr class="tr">
+                                <td>2023-March </td>
                             </tr>
         
-                            <tr>
-                                <td>Page Count</td>
+                            <tr class="tr">
+                                <td>90</td>
                             </tr>
         
-                            <tr>
-                                <td>ISBN</td>
+                            <tr class="tr">
+                                <td>9999</td>
                             </tr>
                     </tr>
         
-                    <tr>
-                        <td rowspan="4">03</td>
+                    <tr class="tr">
+                        <td rowspan="4">02</td>
                         
-                        <td>Book name</td>
-                        <td rowspan="4">Author 3</td>
-                        <td rowspan="4">genre 3</td>
+                        <td>Baahubali</td>
+                        <td rowspan="4">SS Rajamouli</td>
+                        <td rowspan="4">Drama</td>
                         <td rowspan="4">Not Available</td>
                         
-                            <tr>
-                                <td>Publication Date</td>
+                            <tr class="tr">
+                                <td>2022 March</td>
                             </tr>
         
-                            <tr>
-                                <td>Page Count</td>
+                            <tr class="tr">
+                                <td>200</td>
                             </tr>
         
-                            <tr>
-                                <td>ISBN</td>
+                            <tr class="tr">
+                                <td>1999</td>
+                            </tr>
+                    </tr>
+        
+                    <tr class="tr">
+                        <td rowspan="4">03</td>
+                        
+                        <td>KGF</td>
+                        <td rowspan="4">peacewater man</td>
+                        <td rowspan="4">Action</td>
+                        <td rowspan="4">Available</td>
+                        
+                            <tr class="tr">
+                                <td>2021 MARCH</td>
+                            </tr>
+        
+                            <tr class="tr">
+                                <td>111</td>
+                            </tr>
+        
+                            <tr class="tr">
+                                <td>1116</td>
+                            </tr>
+                    </tr>
+
+                    <tr class="tr">
+                        <td rowspan="4">04</td>
+                        
+                        <td>Karthikeya</td>
+                        <td rowspan="4">Nikhil</td>
+                        <td rowspan="4">Suspense Thriller</td>
+                        <td rowspan="4">Available</td>
+                        
+                            <tr class="tr">
+                                <td>2020 MARCH</td>
+                            </tr>
+        
+                            <tr class="tr">
+                                <td>1</td>
+                            </tr>
+        
+                            <tr class="tr">
+                                <td>1</td>
+                            </tr>
+                    </tr>
+
+                    <tr class="tr">
+                        <td rowspan="4">05</td>
+                        
+                        <td>Adipurush</td>
+                        <td rowspan="4">Om raut</td>
+                        <td rowspan="4">Epic</td>
+                        <td rowspan="4">Yet to release soon!</td>
+                        
+                            <tr class="tr">
+                                <td>2023 Sept</td>
+                            </tr>
+        
+                            <tr class="tr">
+                                <td>200</td>
+                            </tr>
+        
+                            <tr class="tr">
+                                <td>299</td>
                             </tr>
                     </tr>
                 </table>
-            </div>
         </section>
 
         <section class="reg">
@@ -116,7 +159,7 @@
     
                     <div>
                         <label for="">Password</label>
-                        <input type="password" required>
+                        <input type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
                     </div>
     
                     <div>
@@ -124,7 +167,7 @@
                         <input type="password" required>
                     </div>
 
-                    <input type="submit">
+                    <button type="submit">Register</button>
                 </form>
 
         </section>
